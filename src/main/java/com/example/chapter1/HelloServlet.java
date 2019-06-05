@@ -29,10 +29,13 @@ public class HelloServlet extends HttpServlet{
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPut(req, resp);
+        System.out.println("This is the editor2.");
+
     }
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doDelete(req, resp);
+        System.out.println("This is the editor2.");
     }
 }
