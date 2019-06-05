@@ -23,5 +23,6 @@ public class HelloServlet extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPost(req, resp);
+        System.out.println("This is the editor1.");
     }
 }
