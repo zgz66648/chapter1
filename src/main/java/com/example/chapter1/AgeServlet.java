@@ -20,4 +20,16 @@ public class AgeServlet extends HttpServlet {
         out.flush();
         out.close();
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.doPost(req, resp);
+        System.out.println("This is the editor10.");
+        System.out.println("This is the editor11.");
+        System.out.println("This is the editor12.");
+        System.out.println("This is the editor13.");
+        System.out.println("This is the editor14.");
+        System.out.println("This is the editor15.");
+        System.out.println("This is the editor16.");
+    }
 }
