@@ -14,6 +14,7 @@ import java.util.Date;
 public class HelloServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // get date
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String currentTime = dateFormat.format(new Date());
         req.setAttribute("currentTime", currentTime);
@@ -26,17 +27,5 @@ public class HelloServlet extends HttpServlet{
         System.out.println("This is the editor1.");
         System.out.println("This is the editor2.");
         System.out.println("This is the editor3.");
-    }
-
-    @Override
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPut(req, resp);
-        System.out.println("This is the editor2.");
-    }
-
-    @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doDelete(req, resp);
-        System.out.println("This is the editor2.");
     }
 }
