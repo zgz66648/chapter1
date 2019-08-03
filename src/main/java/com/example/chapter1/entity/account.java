@@ -14,6 +14,10 @@ public class account {
         this.phone = phone;
     }
 
+    public String toString() {
+        return username + password;
+    }
+
     public String getUsername() {
         return username;
     }
