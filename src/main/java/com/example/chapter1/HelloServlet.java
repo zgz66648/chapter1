@@ -26,9 +26,8 @@ public class HelloServlet extends HttpServlet{
         super.doPost(req, resp);
         System.out.println("This is the editor1.");
 
-        int count = 10;
-        while(count-- >= 0){
-            System.out.println(count);
+        for (int i=0;  i<10; i++) {
+            System.out.println(i);
         }
 
         System.out.println("This is the editor3.");
