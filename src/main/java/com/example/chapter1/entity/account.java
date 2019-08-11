@@ -6,7 +6,8 @@ public class account {
     private String phone;
 
     public String getPhone() {
-        return phone;
+        String pre = "+86";
+        return pre + phone;
     }
 
     public void setPhone(String phone) {
