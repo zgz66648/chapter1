@@ -25,7 +25,11 @@ public class HelloServlet extends HttpServlet{
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPost(req, resp);
         System.out.println("This is the editor1.");
-        System.out.println("This is the editor2.");
+
+        for (int i=0;  i<10; i++) {
+            System.out.println(i);
+        }
+
         System.out.println("This is the editor3.");
     }
 }
